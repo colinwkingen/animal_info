@@ -1,0 +1,12 @@
+.page-header {
+  font-variant: small-caps;
+}
+
+body {
+  background-color: #000;
+  color: #fff;
+}
+
+.hidden {
+  display: none;
+}
