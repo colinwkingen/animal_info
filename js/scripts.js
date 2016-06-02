@@ -27,26 +27,27 @@ $(document).ready(function() {
   $(".animal h1").click(function() {
     $(".animalmenu, #infobox").toggleClass('hidden');
     var animalChoice = $(this).text();
-      if (animalChoice === "SNAKES") {
-        $("#animalpic img").attr("src", SNAKES.img[0]).attr("alt", SNAKES.img[1]);
-        $("#animalinfo h1").text(SNAKES.name);
-        $("#animalinfo h2").text(SNAKES.blurb);
-        $("#animalinfo h4 span").text(SNAKES.fact);
-        $("#animalinfo p").text(SNAKES.info);
-
-      } else if (animalChoice === "TURTLES") {
-        $("#animalpic img").attr("src", TURTLES.img[0]).attr("alt", TURTLES.img[1]);
-        $("#animalinfo h1").text(TURTLES.name);
-        $("#animalinfo h2").text(TURTLES.blurb);
-        $("#animalinfo h4 span").text(TURTLES.fact);
-        $("#animalinfo p").text(TURTLES.info);
-      } else {
-        $("#animalpic img").attr("src", OCTOPI.img[0]).attr("alt", OCTOPI.img[1]);
-        $("#animalinfo h1").text(OCTOPI.name);
-        $("#animalinfo h2").text(OCTOPI.blurb);
-        $("#animalinfo h4 span").text(OCTOPI.fact);
-        $("#animalinfo p").text(OCTOPI.info);
-      }
-
+    if (animalChoice === "SNAKES") {
+      $("#animalpic img").attr("src", SNAKES.img[0]).attr("alt", SNAKES.img[1]);
+      $("#animalinfo h1").text(SNAKES.name);
+      $("#animalinfo h2").text(SNAKES.blurb);
+      $("#animalinfo h4 span").text(SNAKES.fact);
+      $("#animalinfo p").text(SNAKES.info);
+    } else if (animalChoice === "TURTLES") {
+      $("#animalpic img").attr("src", TURTLES.img[0]).attr("alt", TURTLES.img[1]);
+      $("#animalinfo h1").text(TURTLES.name);
+      $("#animalinfo h2").text(TURTLES.blurb);
+      $("#animalinfo h4 span").text(TURTLES.fact);
+      $("#animalinfo p").text(TURTLES.info);
+    } else {
+      $("#animalpic img").attr("src", OCTOPI.img[0]).attr("alt", OCTOPI.img[1]);
+      $("#animalinfo h1").text(OCTOPI.name);
+      $("#animalinfo h2").text(OCTOPI.blurb);
+      $("#animalinfo h4 span").text(OCTOPI.fact);
+      $("#animalinfo p").text(OCTOPI.info);
+    }
+  });
+  $("#backbutton").click(function() {
+    $(".animalmenu, #infobox").toggleClass('hidden');
   });
 });
