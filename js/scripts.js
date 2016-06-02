@@ -28,14 +28,11 @@ $(document).ready(function() {
     $(".animalmenu, #infobox").toggleClass('hidden');
     var animalChoice = $(this).text();
       if (animalChoice === "SNAKES") {
-        $("img").attr("src", SNAKES.img[0]);
-        $("img").attr("alt", SNAKES.img[1]);
+        $("img").attr("src", SNAKES.img[0]).attr("alt", SNAKES.img[1]);
       } else if (animalChoice === "TURTLES") {
-        $("img").attr("src", TURTLES.img[0]);
-        $("img").attr("alt", TURTLES.img[1]);
+        $("img").attr("src", TURTLES.img[0]).attr("alt", TURTLES.img[1]);
       } else {
-        $("img").attr("src", OCTOPI.img[0]);
-        $("img").attr("alt", OCTOPI.img[1]);
+        $("img").attr("src", OCTOPI.img[0]).attr("alt", OCTOPI.img[1]);
       }
 
   });
